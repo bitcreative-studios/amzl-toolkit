@@ -1,0 +1,33 @@
+{
+  "name": "root",
+  "description": "Monorepo for Amazon Toolkit Firefox addon",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "monorepo",
+    "Amazon Logistics",
+    "Amazon",
+    "AMZL",
+    "Firefox",
+    "addon"
+  ],
+  "author": "George Bockari <bitwhys@cr8iv.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "cz-conventional-changelog": "3.3.0",
+    "lerna": "^5.2.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "repository": "git@github.com:bitwhys/amzl-toolkit.git"
+}
