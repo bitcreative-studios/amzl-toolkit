@@ -1,0 +1,20 @@
+{
+  "name": "AMZL Toolkit",
+  "version": "0.0.1",
+  "description": "A collection of sidebar panels and an optional new tab screen packed with tools to assist leadership in the operation of Amazon Logistics sites.",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["Background/main.ts"]
+  },
+  "sidebar_action": {
+    "default_panel": "Sidebar/sidebar.html"
+  },
+  "commands": {
+    "_execute_sidebar_action": {
+      "description": "Open the sidebar panel",
+      "suggested_key": {
+        "default": "Ctrl+Shift+U"
+      }
+    }
+  }
+}
