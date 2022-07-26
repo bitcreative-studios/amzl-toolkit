@@ -1,0 +1,10 @@
+{
+  "name": "AMZL Toolkit",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "sidebar_action": {
+    "default_panel": "Sidebar/sidebar.html",
+    "default_title": "AMZL Toolkit",
+    "default_icon": "assets/icons/icon.png"
+  }
+}
