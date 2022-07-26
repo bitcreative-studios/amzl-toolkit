@@ -1,30 +1,26 @@
-import {
-  darken,
-  mode,
-  transparentize,
-  StyleFunctionProps,
-} from '@chakra-ui/theme-tools'
+import { darken, mode, transparentize } from '@chakra-ui/theme-tools'
+import { ComponentStyleConfig } from '@chakra-ui/react'
 
-const baseStyle = {
+const baseStyle: ComponentStyleConfig['baseStyle'] = {
   borderRadius: 'sm',
 }
 
-const sizes = {}
+const sizes: ComponentStyleConfig['sizes'] = {}
 
-const variants = {
-  primary: (props: StyleFunctionProps) =>
+const variants: ComponentStyleConfig['variants'] = {
+  primary: props =>
     props.theme.components['Button']['variants']['solid']({
       ...props,
       variant: 'solid',
       colorScheme: 'primary',
     }),
-  secondary: (props: StyleFunctionProps) =>
+  secondary: props =>
     props.theme.components['Button']['variants']['solid']({
       ...props,
       variant: 'solid',
       colorScheme: 'secondary',
     }),
-  outline: (props: StyleFunctionProps) => ({
+  outline: props => ({
     color: 'emphasized',
     bg: mode('white', 'gray.800')(props),
     _hover: {
@@ -40,7 +36,7 @@ const variants = {
       bg: mode('gray.100', 'gray.700')(props),
     },
   }),
-  ghost: (props: StyleFunctionProps) => ({
+  ghost: props => ({
     color: 'emphasized',
     _hover: {
       bg: mode(
@@ -60,4 +56,6 @@ const variants = {
   }),
 }
 
-export default { baseStyle, sizes, variants }
+const buttonStyleConfig: ComponentStyleConfig = { baseStyle, sizes, variants }
+
+export default buttonStyleConfig

@@ -1,6 +1,7 @@
-import { mode, StyleFunctionProps } from '@chakra-ui/theme-tools'
+import { mode } from '@chakra-ui/theme-tools'
+import { ComponentStyleConfig } from '@chakra-ui/react'
 
-const baseStyle = (props: StyleFunctionProps) => ({
+const baseStyle: ComponentStyleConfig['baseStyle'] = props => ({
   label: {
     color: 'muted',
     fontWeight: 'medium',
@@ -11,7 +12,7 @@ const baseStyle = (props: StyleFunctionProps) => ({
   },
 })
 
-const sizes = {
+const sizes: ComponentStyleConfig['sizes'] = {
   md: {
     label: {
       fontSize: 'sm',
@@ -19,12 +20,9 @@ const sizes = {
   },
 }
 
-const defaultProps = {
-  colorScheme: 'primary',
-}
-
-export default {
+const checkboxStyleConfig: ComponentStyleConfig = {
   baseStyle,
   sizes,
-  defaultProps,
 }
+
+export default checkboxStyleConfig

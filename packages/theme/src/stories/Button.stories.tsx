@@ -12,6 +12,11 @@ export default meta
 
 const Template: Story<ButtonProps> = args => <Button {...args} />
 
+export const Default = Template.bind({})
+Default.args = {
+  children: 'Button',
+}
+
 export const Primary = Template.bind({})
 Primary.args = {
   variant: 'primary',

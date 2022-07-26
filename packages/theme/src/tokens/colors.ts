@@ -42,7 +42,7 @@ const colors = {
   primary,
   secondary,
   'bg-canvas': {
-    default: 'gray.50',
+    default: 'gray.100',
     _dark: 'gray.900',
   },
   'bg-surface': {
@@ -86,8 +86,8 @@ const colors = {
     _dark: 'brand.200',
   },
   success: {
-    default: 'green.600',
-    _dark: 'green.200',
+    default: '#D4D94E',
+    _dark: '#e6e893',
   },
   error: {
     default: 'red.600',
