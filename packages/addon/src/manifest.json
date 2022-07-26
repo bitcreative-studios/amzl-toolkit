@@ -3,11 +3,16 @@
   "version": "0.0.1",
   "description": "A collection of sidebar panels and an optional new tab screen packed with tools to assist leadership in the operation of Amazon Logistics sites.",
   "manifest_version": 2,
+  "icons": {
+    "64": "assets/icons/icon.png"
+  },
   "background": {
     "scripts": ["Background/main.ts"]
   },
   "sidebar_action": {
-    "default_panel": "Sidebar/sidebar.html"
+    "default_panel": "Sidebar/sidebar.html",
+    "default_title": "AMZL Toolkit",
+    "default_icon": "assets/icons/icon.png"
   },
   "commands": {
     "_execute_sidebar_action": {
